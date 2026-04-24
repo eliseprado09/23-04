@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="login-box">
+    <h2>Login</h2>
+    <form onsubimt="return validarLogin()">
+         <label>Usuario:</label><br>
+         <input type="text" id="Usuario"><br><br>
+
+         <label>Senha:</label><br>
+         <input type="password" id="Senha"><br><br>
+
+        <button type="submit">Entrar</button>
+     </form>
+  </div>
+     <p id="mensagem"></p>
+
+     <script>
+       function validarLogin(){
+         var Usuario = document.getElementById("Usuario").value;
+         var Senha = document.getElementById("Senha").value;
+         var Mensagem = document.getElementById("Mensagem");
+
+        if (Usuario === "user" && senha === "1234") {
+             Mensagem.innerHTML = "Login realizado com sucesso";
+        
+         } else {
+             Mensagem.innerHTML = "Usuario ou senha incorreta";
+
+         }
+         return false; //impedir o carregamento da página
+       }
+     </script>
+</body>
+</html>
