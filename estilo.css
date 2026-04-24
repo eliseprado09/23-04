@@ -1,0 +1,21 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #ffffff, #FFB5C0, #ff1493);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.login-box{
+    background: #ffffff75;
+    padding: 30px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 8px 20px #ffffff (0, 0, 0, 0.2);
+    text-align: center;
+}
+h2{
+    margin-bottom: 20px;
+    color: #000000;
+}
